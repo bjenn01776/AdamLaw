@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,20 +9,18 @@
     <title>Document</title>
 
     <style> 
-
     
-*, *::after,*::before{ padding: 0; margin: 0; box-sizing: border-box}
+    *, *::after,*::before{ padding: 0; margin: 0; box-sizing: border-box}
 
-    
-
+ 
     body {
-            background-image:url('Images/resolving.jpg') ;
-    }
-
-    .container {
-        width: 65%;
-        background-color: aliceblue;
-        outline: blue 2px solid;
+        background-image:url('../Images/mtn_stars.jpg') ;
+        background-repeat:repeat-x;
+        
+        background-position-y: center;
+        background-size:contain ;
+        
+        margin: auto;
     }
 
     .formFactor {
@@ -31,17 +30,15 @@
         margin: 2em auto 0 auto;
         border-radius: 16px;
     }
-
-    .formDiv { width:85%;}
-
-    label,h2 {
+   
+    label, h2 {
         display: block;
         font-size: 1.8em;
         font-weight: 700;
         margin:   1em  1em 0 1em;
     }
 
-input,textarea  {
+    input,textarea  {
     display: block;
     width: 85%;
     margin:  .2em  auto  ;
@@ -50,7 +47,7 @@ input,textarea  {
     border-radius: 6px ;
     }
 
-button {
+    button {
     display:block;
     width: 85%;
     margin: 1em auto;
@@ -61,27 +58,32 @@ button {
     border-radius: 6px;
     }
 
-button[type='submit']:hover {
+    button[type='submit']:hover {
         background-color: aquamarine;
     }
     
-    </style>
+</style>
 </head>
+
+
 <body>
 
-    <h!--  formSubmit.com</h1  -->
-    action="https://formspree.io/f/mayzojoj"
-     
-    <!--form  action="https://formspree.io/f/xjvdyvla" class="formFactor"  method="post"  -->
-    <form  action="https://formspree.io/f/mayzojoj" class="formFactor"  method="post">
+    <!-- formSubmit.com action="https://formspree.io/f/mayzojoj"   WIll-->
+    <!-- form  action="https://formspree.io/f/xjvdyvla" class="formFactor"  method="post"  DAD-->
+    <!-- form  action="https://formspree.io/f/mayzojoj" class="formFactor"  method="post"  WILL-->
+
+    <form  action="https://formspree.io/f/mayzojbj" class="formFactor"  method="post">
         
 
         <div style="margin-top: 1.2em";></div>
 
         
-        <label for="name"> Name: </label>
-        <input type="text" name="name" id="name" required>
-        
+        <label for="fname"> First Name: </label>
+        <input type="text" name="fname" id="fname" required>
+
+       
+        <label for="lname"> Last Name: </label>
+        <input type="text" name="lname" id="lname" required>
 
            
         <label for="phone" >Phone: </label>
@@ -95,10 +97,9 @@ button[type='submit']:hover {
         <textarea cols="48" rows="6" name="msg" id="myMsg"></textarea>
 
         <button type="submit" id="btn"  >SUBMIT</button> 
+
     </form>
 
    
-
-    
 </body>
 </html>
